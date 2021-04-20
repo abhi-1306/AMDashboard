@@ -1,0 +1,91 @@
+
+<!--dash.component.html-->
+<div class="grid-container">
+  <h1 class="mat-h1">Activities</h1>
+  <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+    <!--Mini Cards-->
+    <mat-grid-tile *ngFor="let i of [1, 2, 3, 4]" [colspan]="( cardLayout | async )?.miniCard.cols"
+      [rowspan]="( cardLayout | async )?.miniCard.rows">
+      <app-mini-card [title]="name"  [textValue]="date" [value]="1900" [color]="red" [percentValue]="14"></app-mini-card>
+    </mat-grid-tile>
+
+    <!--Charts-->
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <app-card title="Chart A">
+          <app-chart-type-a></app-chart-type-a>
+      </app-card>
+   </mat-grid-tile>
+   <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+    <app-card title="Chart B">
+        <app-chart-type-b></app-chart-type-b>
+    </app-card>
+ </mat-grid-tile>
+ <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+  <app-card title="Chart C">
+      <app-chart-type-c></app-chart-type-c>
+  </app-card>
+</mat-grid-tile>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <app-card title="Chart D">
+          <app-chart-type-d></app-chart-type-d>
+      </app-card>
+   </mat-grid-tile>
+    <!--Table-->
+    <!-- <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
+      <app-card title="Card 9"><div>Table Content Here</div></app-card>
+    </mat-grid-tile> -->
+
+    <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
+      <app-card title="Active Util Status">
+        <app-running-table></app-running-table>
+      </app-card>
+   </mat-grid-tile>
+  </mat-grid-list>
+  <!-- <button [routerLink]="['/dashboard']" (click)="exit()">Refresh</button> -->
+  <!-- <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px"> -->
+    <!--Mini Cards-->
+    <!-- <mat-grid-tile [colspan]="( cardLayout | async )?.miniCard.cols" [rowspan]="( cardLayout | async )?.miniCard.rows">
+      <app-card title="Active Type">
+        <app-orders-table></app-orders-table>
+      </app-card>
+   </mat-grid-tile> -->
+
+    <!-- <mat-grid-tile *ngFor="let i of [2, 3, 4]" [colspan]="( cardLayout | async )?.miniCard.cols"
+      [rowspan]="( cardLayout | async )?.miniCard.rows">
+      <app-card title="Card {{i}}"><div>Mini Card Content Here</div></app-card>
+    </mat-grid-tile>
+    
+     -->
+    <!-- <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <app-card title="Chart A">
+          <app-chart-type-a></app-chart-type-a>
+      </app-card>
+   </mat-grid-tile>
+   <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+    <app-card title="Chart B">
+        <app-chart-type-b></app-chart-type-b>
+    </app-card>
+ </mat-grid-tile>
+ <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+  <app-card title="Chart C">
+      <app-chart-type-c></app-chart-type-c>
+  </app-card>
+</mat-grid-tile>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <app-card title="Chart D">
+          <app-chart-type-d></app-chart-type-d>
+      </app-card>
+   </mat-grid-tile> -->
+
+    
+    <!--Charts-->
+    <!-- <mat-grid-tile *ngFor="let i of [6, 7, 8]" [colspan]="( cardLayout | async )?.chart.cols"
+      [rowspan]="( cardLayout | async )?.chart.rows">
+      <app-card title="Card {{i}}"><div>Chart Content Here</div></app-card>
+    </mat-grid-tile> -->
+    <!-- Table-->
+    <!-- <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
+      <app-running-table></app-running-table>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+ </div>

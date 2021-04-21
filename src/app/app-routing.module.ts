@@ -13,7 +13,7 @@ const routes: Routes = [{ path: 'Activity', component: DashComponent },{ path: '
 {path: 'create', component: CreateQrComponent },{path: 'history', component: QrhistoryComponent }];//, { path: 'Game', component: Game1Component }
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

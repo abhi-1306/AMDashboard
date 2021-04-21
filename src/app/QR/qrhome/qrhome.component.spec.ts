@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { QRhomeComponent } from './qrhome.component';
 
@@ -6,7 +6,7 @@ describe('QRhomeComponent', () => {
   let component: QRhomeComponent;
   let fixture: ComponentFixture<QRhomeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ QRhomeComponent ]
     })

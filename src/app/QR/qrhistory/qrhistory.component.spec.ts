@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { QrhistoryComponent } from './qrhistory.component';
 
@@ -6,7 +6,7 @@ describe('QrhistoryComponent', () => {
   let component: QrhistoryComponent;
   let fixture: ComponentFixture<QrhistoryComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ QrhistoryComponent ]
     })

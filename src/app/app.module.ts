@@ -26,6 +26,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatBadgeModule} from '@angular/material/badge';
 import { RunningTableComponent } from './running-table/running-table.component';
+import { NgxChessBoardModule } from "ngx-chess-board";
 // import { OrdersTableComponent } from './orders-table/orders-table.component';
 import { HomeComponent } from './home/home.component';
 import { MatChipsModule } from '@angular/material/chips';
@@ -34,7 +35,7 @@ import { MiniCardComponent } from './mini-card/mini-card.component';
 import { HttpClientModule,HTTP_INTERCEPTORS} from '@angular/common/http';
 import { CacheInterceptor } from './interceptor/cache-interceptor';
 
-import { NewsApiService } from './news/news-api.service';
+import { NewsApiService } from './services/news-api.service';
 import { RestutilService } from './services/restutil.service';
 import { StorageutilService } from './services/storageutil.service';
 import { NewsComponent } from './news/news.component';
@@ -47,6 +48,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatInputModule } from '@angular/material/input';
 import { QrhistoryComponent } from './QR/qrhistory/qrhistory.component';
+import { ChessComponent } from './chess/chess.component';
 
 // import { QRCode } from './entity/qr-objects';
 // import { StorageutilService } from './services/storageutil.service';
@@ -75,6 +77,7 @@ import { QrhistoryComponent } from './QR/qrhistory/qrhistory.component';
     QRhomeComponent,
     CreateQrComponent,
     QrhistoryComponent,
+    ChessComponent,
   
     // QRCode,
     // StorageutilService,
@@ -108,6 +111,7 @@ import { QrhistoryComponent } from './QR/qrhistory/qrhistory.component';
     MatProgressSpinnerModule,
     MatTooltipModule,
     MatInputModule,
+    NgxChessBoardModule.forRoot(),
     // StorageutilService,
     // QRCode,
   ],

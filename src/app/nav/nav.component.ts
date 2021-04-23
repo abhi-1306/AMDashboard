@@ -18,6 +18,6 @@ export class NavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-menuItems = ['Home','News', 'Quick Response Code', 'Game', 'Activity', 'Settings'];
+menuItems = ['Home','News', 'Quick Response Code', 'Chess', 'Activity', 'Settings'];
 
 }

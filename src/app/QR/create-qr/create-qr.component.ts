@@ -68,7 +68,9 @@ export class CreateQrComponent implements OnInit {
  
   }
  
- 
+  share(text: string) {
+    this.snackBar.open(text, '', {duration: 3000,panelClass: ['snackbarColor']})
+  }
   showSnackbar(msg: string) {
     //Show snackbar
     this.snackBar.open(msg, '', {

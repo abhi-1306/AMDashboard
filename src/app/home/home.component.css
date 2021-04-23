@@ -26,11 +26,11 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 13%;
-  position: absolute;
-  top: 78%;
+  position: relative;
+  /* top: 78%;
   left: 15%;
   right: 15%;
-  bottom: 15%;
+  bottom: 15%; */
   /* top: 70%;
   left: 40%;
   right: 40%;

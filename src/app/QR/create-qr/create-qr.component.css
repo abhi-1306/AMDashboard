@@ -7,8 +7,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 20%;
-    height: 65%;
-    padding: 50px 20px;
+    height: 55%;
+    padding: 50px 10px;
  }
  
  .qrContent {
@@ -36,17 +36,19 @@
  
  .createBtnDiv {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     width: 100%;
  }
  
  
  .closeBtn {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    width: 100%;
-    margin-bottom: 20px;
+   top: 3%;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   justify-content: left;
+   width: 100%;
  }
  
  .closeBtnFont {
@@ -55,7 +57,7 @@
  }
  
  .qrImgDiv {
-    top: 20%;
+    top: 12%;
     position: absolute;
     display: flex;
     flex-direction: column;

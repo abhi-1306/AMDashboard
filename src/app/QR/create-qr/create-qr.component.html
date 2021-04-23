@@ -18,7 +18,7 @@
            <img *ngIf="!showProgressSpinner" style="padding: 5px 5px;" src={{qrCodeImage}} width="200px" height="200px">
            <mat-spinner *ngIf="showProgressSpinner"></mat-spinner>
            <div class="actionButtons" *ngIf="!showProgressSpinner">
-               <button mat-icon-button color="accent" matTooltip="Share this QR" style="margin: 0 5px;">
+               <button mat-icon-button color="accent" matTooltip="Share this QR" style="margin: 0 5px;" (click)="share(qrText)">
                    <mat-icon>
                        <i class="material-icons md-48">share</i>
                    </mat-icon>

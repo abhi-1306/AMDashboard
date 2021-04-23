@@ -1,1 +1,11 @@
 /*.css*/
+::ng-deep snack-bar-container.snackbarColor {
+    background-color: rgb(83, 13, 211);
+    position: absolute;
+    bottom: 5%;
+    left: 34%;
+    width: 100%;
+}
+::ng-deep .snackbarColor .mat-simple-snackbar {
+    color: white;
+  }
